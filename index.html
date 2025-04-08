@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+          <nav class="navbar navbar-dark fixed-top py-2">
+            <div class="container-fluid">
+              <ul class="navbar-nav d-flex flex-row ms-auto">
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="#">Sobre Mim</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="#">Meus Projetos</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-white" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
+
+        </header>
+        <main>
+            <section id="sobre" class="p-5 bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                          <br>
+                            <img src="assets/cat.jpg" alt="Minha foto" class="img-fluid rounded">
+                          </div>
+                        <div class="col-md-8">
+                          <br></br>
+                            <h3>Sobre Mim</h3>
+                            <p>Meu nome é Emilly e sou estudante de desenvolvimento de sistemas no Senai. Tenho interesse em tecnologia, design, e gosto de criar soluções práticas e bem estruturadas, sempre buscando melhorar minhas habilidades e aprender novas tecnologias. Meu foco é desenvolver aplicativos funcionais, intuitivos e eficientes, equilibrando a parte técnica com um bom design. Estou sempre aberta a novos desafios e oportunidades para expandir meu conhecimento e aprimorar meu trabalho na área de tecnologia!</p>
+                        </div>
+            </section>
+            <section id="projetos" class="p-5 bg-light">
+                    <div class="row">
+                      <div class="col-sm">
+                        <h5>PROJETO 1</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                      </div>
+                      <div class="col-sm">
+                        <h5>PROJETO 2</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                      </div>
+                      <div class="col-sm">
+                        <h5>PROJETO 3</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <section id="contato" class="p-5">
+              <h3 class="text-white">Contato</h3>
+              <form id="form">
+
+                <div id="success-message" class="alert alert-success d-none">
+                  Mensagem enviada com sucesso! 🎉
+                </div>
+                <div id="error-message" class="alert alert-danger d-none">
+                  Ocorreu um erro. Tente novamente! ❌
+                </div>
+                
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <label for="nome" class="form-label text-white">Nome</label>
+                    <input type="text" class="form-control form-control-sm" id="nome" placeholder="Digite seu nome" style="width: 350px;" required>
+                  </div>
+                  
+                  <div class="col-auto">
+                    <label for="email" class="form-label text-white">E-mail</label>
+                    <div class="input-group input-group-sm" style="width: 350px;">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                      </div>
+                      <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+                    </div>
+                  </div>
+              
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                  </div>
+                </div>
+              </form>
+              
+            </section>
+            <script>
+              function enviarFormulario(event) {
+                event.preventDefault();
+                alert("Formulário enviado com sucesso!");
+              }
+            </script>
+            
+        </main>
+        <footer class=" text-white text-center p-4 mt-5">
+            <p>© 2025 Emilly - Todos os direitos reservados</p>
+            <div>
+                <a href="#" class="text-white me-3">GitHub</a>
+                <a href="#" class="text-white">LinkedIn</a>
+              </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("form");
+          const successMessage = document.getElementById("success-message");
+          const errorMessage = document.getElementById("error-message");
+
+          form.addEventListener("submit", function (event) {
+              event.preventDefault(); // Evita o recarregamento da página
+
+              // Pega os dados preenchidos no formulário
+              const formData = new FormData(form);
+
+        // Envia a requisição AJAX usando Fetch
+              fetch("https://jsonplaceholder.typicode.com/posts", {
+                  method: "POST",
+                  body: formData
+              })
+              .then(response => {
+                  if (!response.ok) throw new Error("Erro ao enviar mensagem");
+                  return response.json();
+              })
+              .then(data => {
+                  console.log("Resposta do servidor:", data);
+                  successMessage.classList.remove("d-none");
+                  errorMessage.classList.add("d-none");
+                  form.reset(); // Limpa os campos
+              })
+              .catch(error => {
+                  console.error("Erro:", error);
+                  successMessage.classList.add("d-none");
+                  errorMessage.classList.remove("d-none");
+              });
+          });
+      });
+        </script>
+    </body>
+</html>

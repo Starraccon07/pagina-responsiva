@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e1929; /* fundo roxo escuro */
+    margin-top: 80px; /* espaço pro fixed navbar */
+  }
+  
+  /* Navbar e footer */
+  .navbar,
+  footer {
+    background-color: #181321;
+  }
+  
+  /* Links da navbar */
+  .navbar .nav-link {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  
+  /* Hover da navbar */
+  .navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* branco translúcido */
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Títulos */
+  h3, h5 {
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  /* Seção de projetos */
+  #projetos .col-sm {
+    background-color:#53447e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Efeito ao passar o mouse nos projetos */
+  #projetos .col-sm:hover {
+    background-color:  #29203f;
+    transform: scale(1.02);
+    backdrop-filter: blur(3px);
+  }
+  
+  /* Imagem redonda e com sombra leve */
+  img {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    border-radius: 12px;
+  }
+  
+  /* Botão do formulário */
+  button[type="submit"] {
+    background-color: #6b4caf;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #fff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #8b6fe8;
+  }
+  
+  /* Footer links */
+  footer a {
+    color: #fffbfb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Deixar o texto do 'Sobre Mim' maior */
+  #sobre p {
+    font-size: 1.2rem;
+  }
+
+/* Deixar os textos dos projetos maiores */
+  #projetos p {
+    font-size: 1.1rem;
+  }
